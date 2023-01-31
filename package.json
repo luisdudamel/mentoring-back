@@ -4,15 +4,15 @@
   "description": "Mentoring for students",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "nodemon:dev": "nodemon src -q"
   },
   "devDependencies": {
     "eslint": "^8.33.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.27.5",
-    "husky": "^7.0.0",
-    "nodemon": "^2.0.15"
+    "husky": "^7.0.0"
   },
   "dependencies": {
     "@types/jest": "^27.4.0",
