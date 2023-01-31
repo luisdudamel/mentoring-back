@@ -2,6 +2,8 @@ const express = require("express");
 const { default: helmet } = require("helmet");
 const morgan = require("morgan");
 const cors = require("cors");
+const usersRouter = require("../routers/usersRouter");
+const { generalError } = require("../middlewares/errors");
 
 const corsOptions = {
   origin: [
@@ -14,8 +16,6 @@ const corsOptions = {
     "http://localhost:5000",
     "http://localhost:5001",
     "http://localhost:5002",
-    "https://luis-dudamel-front-final-project-202204-bcn.netlify.app/",
-    "https://luis-dudamel-front-final-project-202204-bcn.netlify.app",
   ],
 };
 
@@ -25,5 +25,8 @@ app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(helmet());
+
+app.use("/users", usersRouter);
+app.use(generalError);
 
 module.exports = app;
