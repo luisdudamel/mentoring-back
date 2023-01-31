@@ -1,0 +1,42 @@
+{
+  "name": "mentoring-back",
+  "version": "1.0.0",
+  "description": "Mentoring for students",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^7.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@types/jest": "^27.4.0",
+    "bcrypt": "^5.0.1",
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "debug": "^4.3.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "jest": "^27.5.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb-memory-server": "^8.5.2",
+    "mongoose": "^6.2.2",
+    "morgan": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisdudamel/mentoring-back.git"
+  },
+  "author": "Luis Dudamel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisdudamel/mentoring-back/issues"
+  },
+  "homepage": "https://github.com/luisdudamel/mentoring-back#readme"
+}
