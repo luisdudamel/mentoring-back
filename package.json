@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm test",
+    "start": "node src",
     "nodemon:dev": "nodemon src -q"
   },
   "devDependencies": {
